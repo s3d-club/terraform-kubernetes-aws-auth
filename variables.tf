@@ -1,3 +1,12 @@
+variable "cluster_name" {
+  type = string
+
+  description = <<-END
+		EKS Cluster Name
+		https://go.s3d.club/k8-aws-auth#cluster_name
+		END
+}
+
 variable "master_role_arn" {
   type = string
 
@@ -13,6 +22,15 @@ variable "master_user_arn" {
   description = <<-END
 		Users
 		https://go.s3d.club/k8-aws-auth#master_user_arn
+		END
+}
+
+variable "region" {
+  type = string
+
+  description = <<-END
+		Users
+		https://go.s3d.club/k8-aws-auth#region
 		END
 }
 

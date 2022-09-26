@@ -1,3 +1,5 @@
+data "aws_caller_identity" "this" {}
+
 locals {
   master_groups = ["system:masters"]
 
@@ -9,7 +11,7 @@ locals {
 
   users = concat(var.users, [{
     groups   = local.master_groups
-    userarn  = var.master_user_arn
+    userarn  = "arn:aws:iam::${data.aws_caller_identity.this.account_id}:root"
     username = "master"
   }])
 }
@@ -21,7 +23,11 @@ resource "kubernetes_config_map" "this" {
   }
 
   data = {
-    "mapRoles" = yamlencode(local.roles)
-    "mapUsers" = yamlencode(local.users)
+    mapRoles = yamlencode(local.roles)
+    mapUsers = yamlencode(local.users)
+  }
+
+  provisioner "local-exec" {
+    command = "aws eks --region \"${var.region}\" update-kubeconfig --name \"${var.cluster_name}\""
   }
 }
