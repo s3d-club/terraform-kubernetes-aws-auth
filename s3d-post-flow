@@ -11,4 +11,4 @@ s3d-flow-down() {
   s3d-flow
 }
 
-(cd ../aws-site && s3d-flow-down)
+(cd ../aws-site-group && s3d-flow-down)

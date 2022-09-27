@@ -10,5 +10,11 @@ Recently completed and planned work is tracked here.
 - Added kubectl init
 - Added `s3d-post-flow` script
 
+## [0.0.3](.)
+- Added `hashicorp/external` and `hashicorp/null` providers
+- Changed `s3d-post-flow` to target `aws-site-group`
+- Removed `hashicorp/aws` provider
+- Removed `master_user_arn` variable
+
 ## [plan](.)
 - **TODO** Added planned item

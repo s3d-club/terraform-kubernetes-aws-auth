@@ -16,15 +16,6 @@ variable "master_role_arn" {
 		END
 }
 
-variable "master_user_arn" {
-  type = string
-
-  description = <<-END
-		Users
-		https://go.s3d.club/k8-aws-auth#master_user_arn
-		END
-}
-
 variable "region" {
   type = string
 
