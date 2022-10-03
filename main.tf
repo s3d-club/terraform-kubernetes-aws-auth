@@ -8,8 +8,8 @@ data "external" "eks" {
 
 locals {
   account_id      = split(":", var.master_role_arn)[4]
-  master_groups   = ["system:masters"]
   eks_init_result = jsonencode(data.external.eks.result)
+  master_groups   = ["system:masters"]
 
   data = {
     mapRoles = yamlencode(local.roles)
@@ -43,6 +43,7 @@ resource "null_resource" "eks" {
 
 resource "kubernetes_config_map" "this" {
   depends_on = [null_resource.eks]
+
   metadata {
     name      = "aws-auth"
     namespace = "kube-system"

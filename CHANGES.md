@@ -1,20 +1,11 @@
 # Changes
 Recently completed and planned work is tracked here.
 
-## [0.0.0](.) [0.0.1](.)
-- Added project files
-- Updated `README.md`
-- Added Terraform
+Plan:
+- **TODO** Remove `s3d-eks-update-kubeconfig`; non-portable hack!
 
-## [0.0.2](.)
-- Added kubectl init
-- Added `s3d-post-flow` script
+## [0.0.0](.) [0.0.3](.)
+- Created early versions
 
-## [0.0.3](.)
-- Added `hashicorp/external` and `hashicorp/null` providers
-- Changed `s3d-post-flow` to target `aws-site-group`
-- Removed `hashicorp/aws` provider
-- Removed `master_user_arn` variable
-
-## [plan](.)
-- **TODO** Added planned item
+## [0.0.4](.)
+- Updated documents and minor code clean-up
