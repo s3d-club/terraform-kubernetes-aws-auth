@@ -1,15 +1,6 @@
-data "external" "eks" {
-  program = [
-    "s3d-eks-update-kubeconfig",
-    var.cluster_name,
-    var.region,
-  ]
-}
-
 locals {
-  account_id      = split(":", var.master_role_arn)[4]
-  eks_init_result = jsonencode(data.external.eks.result)
-  master_groups   = ["system:masters"]
+  account_id    = split(":", var.master_role_arn)[4]
+  master_groups = ["system:masters"]
 
   data = {
     mapRoles = yamlencode(local.roles)
@@ -29,21 +20,7 @@ locals {
   }])
 }
 
-resource "null_resource" "eks" {
-  triggers = { on = local.eks_init_result }
-
-  provisioner "local-exec" {
-    environment = {
-      eks_init_result = local.eks_init_result
-    }
-
-    command = "echo \"$eks_init_result\""
-  }
-}
-
 resource "kubernetes_config_map" "this" {
-  depends_on = [null_resource.eks]
-
   metadata {
     name      = "aws-auth"
     namespace = "kube-system"
