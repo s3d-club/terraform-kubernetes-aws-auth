@@ -9,3 +9,6 @@ Plan:
 
 ## [0.0.5](.)
 - Removed external datasource and null resource
+
+## [0.0.6](.)
+- Updated `CODE-OF-CONDUCT.md`
