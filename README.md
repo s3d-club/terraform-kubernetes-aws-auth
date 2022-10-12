@@ -1,10 +1,10 @@
-# S3D Kubernetes AWS Auth Map Module
+# K8 AWS Auth Map Module
 This module defines the configuration we recommend for the AWS Map module.
 
 ## Other Documents
 Please read our [LICENSE][lice], [CONTRIBUTING][cont], [CODE-OF-CONDUCT][code],
 and [CHANGES][chge] documents before working in this project and anytime they
-are update.
+are updated.
 
 ## Overview
 This module works in conjunction with the [S3D EKS][eks0] module but could also
