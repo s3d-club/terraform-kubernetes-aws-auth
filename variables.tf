@@ -1,28 +1,9 @@
-variable "cluster_name" {
-  type = string
-
-  description = <<-END
-		EKS Cluster Name
-		https://go.s3d.club/k8-aws-auth#cluster_name
-		END
-}
-
 variable "master_role_arn" {
   type = string
 
-  description = <<-END
-		Users
-		https://go.s3d.club/k8-aws-auth#master_role_arn
-		END
-}
-
-variable "region" {
-  type = string
-
-  description = <<-END
-		Users
-		https://go.s3d.club/k8-aws-auth#region
-		END
+  description = <<-EOT
+    A master role ARN.
+    EOT
 }
 
 variable "roles" {
@@ -34,10 +15,9 @@ variable "roles" {
     groups   = list(string)
   }))
 
-  description = <<-END
-		Roles
-		https://go.s3d.club/k8-aws-auth#roles
-		END
+  description = <<-EOT
+    A list of roles.
+    EOT
 }
 
 variable "users" {
@@ -49,8 +29,7 @@ variable "users" {
     groups   = list(string)
   }))
 
-  description = <<-END
-		Users
-		https://go.s3d.club/k8-aws-auth#users
-		END
+  description = <<-EOT
+    A list of users.
+    EOT
 }
