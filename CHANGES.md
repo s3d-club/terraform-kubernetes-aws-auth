@@ -6,3 +6,6 @@ Recently completed and planned work is tracked here.
 
 ## [0.0.9](.)
 - Improved descriptions of variables and outputs
+
+## [0.0.10](.)
+- Upgraded `kubernetes` provider
