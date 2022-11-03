@@ -7,5 +7,6 @@ Recently completed and planned work is tracked here.
 ## [0.0.9](.)
 - Improved descriptions of variables and outputs
 
-## [0.0.10](.)
+## [0.0.10](.) to [0.0.11](.)
+- Upgraded `terraform` version
 - Upgraded `kubernetes` provider
