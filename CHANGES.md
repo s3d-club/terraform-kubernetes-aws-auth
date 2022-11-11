@@ -8,8 +8,8 @@ This file describes the project history as it relates to tagged versions.
 - Improved descriptions of variables and outputs
 
 ## [0.0.10](.) to [0.0.11](.)
-- Upgraded `terraform` version
-- Upgraded `kubernetes` provider
+- Updated `terraform` version
+- Updated `kubernetes` provider
 
-## [0.0.12](.)
+## [0.0.12](.) to [0.0.13](.)
 - Updated version
