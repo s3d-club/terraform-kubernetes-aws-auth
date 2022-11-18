@@ -4,12 +4,10 @@ This file describes the project history as it relates to tagged versions.
 ## [0.0.0](.) to [0.0.8](.)
 - Created early versions
 
-## [0.0.9](.)
+## [0.0.9](.) to [0.0.13](.)
 - Improved descriptions of variables and outputs
-
-## [0.0.10](.) to [0.0.11](.)
-- Updated `terraform` version
+- Updated Terraform version
 - Updated `kubernetes` provider
 
-## [0.0.12](.) to [0.0.13](.)
-- Updated version
+## [0.0.14](.)
+- Updated Terraform version
