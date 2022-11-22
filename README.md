@@ -1,10 +1,9 @@
 # K8 AWS Auth Map Module
 This module defines the configuration we recommend for the AWS Map module.
 
-## Other Documents
-Please read our [LICENSE][lice], [CONTRIBUTING][cont], [CODE-OF-CONDUCT][code],
-and [CHANGES][chge] documents before working in this project and anytime they
-are updated.
+## Associated Documents
+Please read our [LICENSE][lice], [CONTRIBUTING][cont], and [CHANGES][chge]
+documents before working in this project and anytime they are updated.
 
 ## Overview
 This module works in conjunction with the [S3D EKS][eks0] module but could also
@@ -24,6 +23,5 @@ to present options we feel don't make sense.
 
 [eks0]: /docs/source/aws-eks/overview
 [chge]: ./CHANGES.md
-[code]: ./CODE-OF-CONDUCT.md
 [cont]: ./CONTRIBUTING.md
 [lice]: ./LICENSE.md
