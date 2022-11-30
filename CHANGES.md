@@ -9,5 +9,6 @@ This file describes the project history as it relates to tagged versions.
 - Reformated `terraform.tf`
 - Updated providers
 
-## [0.0.18](.)
+## [0.0.18](.) to [0.0.19](.)
 - Updated docs
+- Updated `required_version`
