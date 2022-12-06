@@ -12,3 +12,6 @@ This file describes the project history as it relates to tagged versions.
 ## [0.0.18](.) to [0.0.19](.)
 - Updated docs
 - Updated `required_version`
+
+## [0.0.20](.)
+- Updated `kubernetes` provider
